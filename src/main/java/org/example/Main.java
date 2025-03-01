@@ -10,6 +10,7 @@ public class Main {
         System.out.println("Hello world!");
 
         Player p = new Player();
+        Word w = new Word();
         System.out.println(p.attempts);
         ArrayList<String> words = new ArrayList<String>();
 
@@ -20,6 +21,8 @@ public class Main {
             }
         }
         System.out.println(words);
+        w.selectWord(words);
+        System.out.println(w.correctWord);
 
 
     }
