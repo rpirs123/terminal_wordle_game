@@ -16,6 +16,8 @@ public class Word {
             char cMain = this.correctWord.charAt(i);
             if(c == cMain){
                 System.out.print(ConsoleColors.GREEN +c + ConsoleColors.RESET + "");
+            }else if(this.correctWord.contains(String.valueOf(c))){
+                System.out.print(ConsoleColors.YELLOW +c + ConsoleColors.RESET + "");
             }else{
                 System.out.print(ConsoleColors.RED + c + ConsoleColors.RESET + "");
 
