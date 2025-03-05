@@ -6,12 +6,12 @@ public class Word {
     String correctWord;
 
     void selectWord(ArrayList<String> arr){
-         //int index = (int)(Math.random() * arr.size());
+
          do{
            int index = (int)(Math.random() * arr.size());
             this.correctWord = arr.get(index);
        }while(this.correctWord.length() != 5);
-        //this.correctWord = arr.get(index);
+
     }
     void checkCharacters(String word){
         for(int i =0; i != word.length(); i++){
